@@ -8,7 +8,7 @@ import (
 func ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	var visitorName = r.URL.Query().Get("name")
 	if (visitorName == "") {
-		visitorName = "World"
+		visitorName = "Cruel World"
 	}
 	fmt.Fprintln(w, fmt.Sprintf("Hello, %s!", visitorName))
 }
