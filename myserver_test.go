@@ -10,7 +10,7 @@ import (
 )
 
 func TestWebServerDefaultNoArgs(t *testing.T) {
-	var name = "World"
+	var name = "Cruel World"
 	
 	server := httptest.NewServer(http.HandlerFunc(ServeHTTP))
 	defer server.Close()
